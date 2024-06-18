@@ -28,7 +28,7 @@ public class RedisUtils {
 
 
         for (int i = 0; i < 100; i++) {
-            int concurrencyLevel = 3000;
+            int concurrencyLevel = 50000000;
             for (int j = 0; j < concurrencyLevel; j++) {
                 Thread thread = new Thread(new Worker());
                 thread.start();
